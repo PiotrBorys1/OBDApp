@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">CAR OBD</string>
+    <string name="OK">OK</string>
+    <string name="wait_for_IP_by_SMS">Zaczekaj na SMS z IP drugiego urządzenia</string>
+    <string name="cant_find_bluetooth">Nie można znaleźć Bluetooth</string>
+    <string name="put_phone_number">Wpisz domyślny numer telefonu na który będzie przesyłany adres IP.</string>
+    <string name="do_continue">Czy chcesz kontynuować?</string>
+    <string name="continue_">Kontynuuj</string>
+    <string name="select_pair_dev">Wybierz sparowne urządzenie.</string>
+
+
+    <string name="wrong_phone">Błędny numer telefonu</string>
+    <string name="cant_find_bonded">Nie można znaleźć żadnych powiązanych urządzeń bluetooth</string>
+    <string name="wait">Czekaj...</string>
+    <string name="findpaired_dev">Znajdź sparowane urządzenia Bluetooth</string>
+    <string name="find_conn_close_wifi">Znajdź i połącz z bliskim urządzeniem WIFI</string>
+    <string name="con_via_intern">Połącz z urządzeniem za pomocą Internetu</string>
+    <string name="chos_mode">Wybierz tryb</string>
+    <string name="remot_contr">Zdalane sterowanie</string>
+
+
+    <string name="diagn_obd">Diagnostyka OBD</string>
+    <string name="cam_real_pedal">Kamera z rzeczywistym widokiem pedałów</string>
+    <string name="cam_rotation">Kamera oraz sterowanie za pomocą obrotu urządzenia</string>
+    <string name="nocam_real_pedals">Brak kamery z rzeczywistym widokiem pedałów</string>
+    <string name="nocam_roattion">Brak kamery oraz sterowanie za pomocą obrotu urządzenia</string>
+    <string name="gyro_not_supp">Żyroskop nie obsługiwany</string>
+    <string name="set_phone_def_pos">Ustaw telefon w domyślej pozycji początkowej (zerowej) i kliknij GO</string>
+    <string name="selectMode">Wybierz tryb</string>
+
+    <string name="change_passw">Zmień hasło</string>
+    <string name="wrong_inpt_data">Złe dane wejściowe</string>
+    <string name="put_passw">Wpisz hasło</string>
+    <string name="wrong_passwrd">Błędne hasło</string>
+    <string name="passwrd_changed">Hasło zmienione</string>
+    <string name="err_conn_ECU">Błąd podczas próby połączenia z ECU</string>
+    <string name="cant_connect">Nie można połączyć</string>
+    <string name="err_cleared">Błędy skasowane</string>
+
+
+    <string name="cannot_clr_err">Nie można skasować błędów</string>
+    <string name="try_again">Spróbuj ponownie</string>
+    <string name="select_option">Wybierz opcję</string>
+    <string name="graphs">Wykresy</string>
+    <string name="generl_info">Ogólne informacje</string>
+    <string name="err_codes">Kody błędów</string>
+    <string name="clr_err_codes">Wyczyść kody błędów</string>
+    <string name="select_graphs">Wybierz wykresy</string>
+
+
+    <string name="check_alla_graphs">Zaznacz wszystkie wykresy</string>
+    <string name="all_pl_one_gr">Wszystkie linie na jednym wykresie</string>
+    <string name="each_pl_anoth_gr">Każda linia na osobnym wykresie</string>
+    <string name="err_in_fuel">Błąd w dozowaniu paliwa i powietrza oraz w pomocniczych kontrolach emisji</string>
+    <string name="err_in_injection">Błąd w układzie wtrysku paliwa i powietrza </string>
+    <string name="err_in_air_meter">Błąd dozowania paliwa i powietrza (układ wtryskowy)</string>
+    <string name="err_misfires">Błąd w układach zapłonowych lub przerwy zapłonu</string>
+    <string name="err_emission_sys">Błąd w pomocniczych kontrolach emisji</string>
+
+
+    <string name="err_spd_cntrl">Błąd w sterowaniu prędkością pojazdu, układach kontroli biegu jałowego i wejściach pomocniczych</string>
+    <string name="err_comp_outp_circ">Błąd w obwodzie wyjściowym komputera</string>
+    <string name="err_transmiss">Błąd układu przeniesienia napędu</string>
+    <string name="err_from">Błędy z </string>
+    <string name="stor_err">Zapisane błędy </string>
+    <string name="pend_err">Obecne błędy</string>
+    <string name="his_err_from">Błędy historyczne z</string>
+    <string name="pend_err_from">Błędy obecne z</string>
+
+    <string name="bat_err">Błędy baterii</string>
+    <string name="loading_">Ładowanie...</string>
+    <string name="freeze_data">Zamrożone dane zapisane w momencie wystąpienia błędu DTC</string>
+    <string name="retrv_data">Pobieranie danych...</string>
+    <string name="unknwn_fault">Nieznany błąd</string>
+    <string name="pu_max_min_Y">Wpisz maksymalną i minimalną wartość na osi Y.</string>
+    <string name="wrng_num">Błędna wartość</string>
+
+
+    <string name="set_val_sampl_time"> Ustawione wartości\nOkres próbkowania=</string>
+    <string name="max_sampl">Maksymana liczba próbek=</string>
+    <string name="saving_">Zapisywanie...</string>
+    <string name="adjst_sample">Dostosuj czas próbkowania na suwaku i podaj maksymalną liczbę próbek na wykresie (całkowita liczba próbek, a nie ilość widoczna w danym czasie na wykresie)</string>
+    <string name="max_num_sampl">Max number of samples [pcs]</string>
+    <string name="ring_buff">Ring Buffer</string>
+    <string name="liner_buff">Linear Buffer</string>
+
+
+    <string name="max_y_val">Maksymalna wartość na osi Y</string>
+    <string name="min_Y_val">Minimalna wartość na osi Y</string>
+    <string name="Default">Domyślne</string>
+    <string name="sel_mod_for_dev">Wybierz tryb dla tego urzadzenia</string>
+    <string name="contr_clien">Kontroler (Client)</string>
+    <string name="gate_">Bramka (Server)</string>
+    <string name="phn_number">Numer telefonu</string>
+
+
+    <string name="ip_anoth_dev">Adres IP drugiego urządzenia</string>
+    <string name="old_passw">Stare hasło</string>
+    <string name="new_passwrd">Nowe hasło</string>
+    <string name="repeat_new_passw">Powtórz nowe hasło</string>
+    <string name="passwrd_">Hasło</string>
+    <string name="lead_acid">Lead-Acid</string>
+
+    <string name="def_phon_num">Domyślny numer telofonu na jaki wysyłać adres IP</string>
+    <string name="gener_sett">Ustawienia ogólne</string>
+    <string name="save_to_file">Zapisz do pliku</string>
+    <string name="y_setings">Ustawienia osi Y</string>
+    <string name="put_Port_Nr">Numer portu</string>
+    <string name="put_Port_n">Wpisz numer portu</string>
+    <string name="Next_Freeze_Err">Następny błąd, który spowodował zapisanie danych</string>
+    <string name="no_Fault">Brak błędu</string>
+    <string name="open_graph_file">Otwórz plik z danymi wykresu</string>
+    <string name="all_avl_names_vicible">Wszyskie nazwy wykresów widoczne</string>
+    <string name="muenu_item_manual">Instrukcja</string>
+    <string name="manula_dialog_title">Jak używać aplikacji?</string>
+    <string name="option_dialog_title">Dostępne opcje:</string>
+
+</resources>
+

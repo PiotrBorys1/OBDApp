@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">CAR OBD</string>
+    <string name="OK">OK</string>
+    <string name="wait_for_IP_by_SMS">Wait for SMS with IP value</string>
+    <string name="cant_find_bluetooth">Can not find Bluetooth</string>
+    <string name="put_phone_number">Put default phone number of client where to send IP address</string>
+    <string name="do_continue">Do you want to continue?</string>
+    <string name="continue_">Continue</string>
+    <string name="select_pair_dev">Select paired device.</string>
+
+
+    <string name="wrong_phone">Wrong phone number</string>
+    <string name="cant_find_bonded">Can not find any bonded device</string>
+    <string name="wait">Wait...</string>
+    <string name="findpaired_dev">Find paired Bluetooth devices</string>
+    <string name="find_conn_close_wifi">Find and connect to close wifi device</string>
+    <string name="con_via_intern">Connect with remote device via Internet</string>
+    <string name="chos_mode">Choose mode</string>
+    <string name="remot_contr">Remote Control</string>
+
+
+    <string name="diagn_obd">Diagnostics OBD</string>
+    <string name="cam_real_pedal">Camera with real pedals look</string>
+    <string name="cam_rotation">Camera with steering by phone rotation</string>
+    <string name="nocam_real_pedals">No camera with real pedals look</string>
+    <string name="nocam_roattion">No camera with steering by phone rotation</string>
+    <string name="gyro_not_supp">Gyro sensor not supported</string>
+    <string name="set_phone_def_pos">Set phone in default position and click go</string>
+    <string name="selectMode">Select mode</string>
+
+    <string name="change_passw">Change password</string>
+    <string name="wrong_inpt_data">Wrong input data</string>
+    <string name="put_passw">Put password</string>
+    <string name="wrong_passwrd">Wrong password</string>
+    <string name="passwrd_changed">Password changed </string>
+    <string name="err_conn_ECU">Error during connection with ECU</string>
+    <string name="cant_connect">Can not connect</string>
+    <string name="err_cleared">Error Cleared</string>
+
+
+    <string name="cannot_clr_err">Cannot clear errors</string>
+    <string name="try_again">Try again</string>
+    <string name="select_option">Select option</string>
+    <string name="graphs">Graphs</string>
+    <string name="generl_info">General Info </string>
+    <string name="err_codes">Error Codes</string>
+    <string name="clr_err_codes">Clear Error Codes</string>
+    <string name="select_graphs">Select graphs</string>
+
+
+    <string name="check_alla_graphs">Check all graphs</string>
+    <string name="all_pl_one_gr">All plots on one graph</string>
+    <string name="each_pl_anoth_gr">Each plot on another graph</string>
+    <string name="err_in_fuel">Error in fuel and air metering and auxiliary emission controls</string>
+    <string name="err_in_injection">Error in fuel and air metering injection system </string>
+    <string name="err_in_air_meter">Error in fuel and air metering (injection system)</string>
+    <string name="err_misfires">Error in ignition systems or misfires</string>
+    <string name="err_emission_sys">Error in auxiliary emission controls</string>
+
+
+    <string name="err_spd_cntrl">Error in vehicle speed control, idle control systems, and auxiliary inputs</string>
+    <string name="err_comp_outp_circ">Error in computer output circuit</string>
+    <string name="err_transmiss">Error in transmission</string>
+    <string name="err_from">Errors from </string>
+    <string name="stor_err">Stored errors </string>
+    <string name="pend_err">Pending errors</string>
+    <string name="his_err_from">History errors from</string>
+    <string name="pend_err_from">Pending errors from</string>
+
+    <string name="bat_err">Battery errors</string>
+    <string name="loading_">Loading...</string>
+    <string name="freeze_data">Freeze data when last DTC occur</string>
+    <string name="retrv_data">Retrieving data...</string>
+    <string name="unknwn_fault">Unknown Fault</string>
+    <string name="pu_max_min_Y">Put max and min Y axis value.</string>
+    <string name="wrng_num">Wrong number</string>
+
+
+    <string name="set_val_sampl_time"> Set values\nSampletime=</string>
+    <string name="max_sampl">Max samples number=</string>
+    <string name="saving_">Saving...</string>
+    <string name="adjst_sample">Adjust sample time on slider and put maximum number of samples on graph (full value, not amount visible at one time on graph)</string>
+    <string name="max_num_sampl">Max number of samples [pcs]</string>
+    <string name="ring_buff">Ring Buffer</string>
+    <string name="liner_buff">Linear Buffer</string>
+
+
+    <string name="max_y_val">Max Y axis value</string>
+    <string name="min_Y_val">Min Y axis value</string>
+    <string name="Default">Default</string>
+    <string name="sel_mod_for_dev">Select mode for this device</string>
+    <string name="contr_clien">Controller (Client)</string>
+    <string name="gate_">Gate (Server)</string>
+    <string name="phn_number">Phone number</string>
+
+
+    <string name="ip_anoth_dev">IP address of another device</string>
+    <string name="old_passw">Old Password</string>
+    <string name="new_passwrd">New Password</string>
+    <string name="repeat_new_passw">Repeat New Password</string>
+    <string name="passwrd_">Password</string>
+    <string name="lead_acid">Lead-Acid</string>
+
+    <string name="def_phon_num">Put default phone number to send IP</string>
+    <string name="gener_sett">General Settings</string>
+    <string name="save_to_file">Save to File</string>
+    <string name="y_setings">Y Axis Settings</string>
+    <string name="put_Port_Nr">Port number</string>
+    <string name="put_Port_n">Insert port number</string>
+    <string name="Next_Freeze_Err">Next error from list, that caused freeze frame</string>
+    <string name="no_Fault">No fault</string>
+
+    <string name="open_graph_file">Open graph data file</string>
+    <string name="all_avl_names_vicible">All available graphs names visible</string>
+    <string name="muenu_item_manual">Instruction</string>
+    <string name="manula_dialog_title">How to use app?</string>
+    <string name="option_dialog_title">Available options:</string>
+</resources>
+

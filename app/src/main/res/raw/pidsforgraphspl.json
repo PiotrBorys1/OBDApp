@@ -1,0 +1,1616 @@
+{
+
+  "pids": [
+
+
+
+    {
+
+      "Mode": "01",
+
+      "PID": "04",
+
+      "Byte": "1",
+
+      "Description": "Obliczona wartość obciążenia silnika",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "05",
+
+      "Byte": "1",
+
+      "Description": "Temperatura cieczy chłodzącej silnik",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°C",
+
+      "Formula": "A-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "05",
+
+      "Byte": "1",
+
+      "Description": "Temperatura cieczy chłodzącej silnik",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°F",
+
+      "Formula": "((A-40) * 1.8) + 32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0A",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie paliwa",
+
+      "Min": "0",
+
+      "Max": "765",
+
+      "Units": "kPa (skrajnia)",
+
+      "Formula": "A*3"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0A",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie paliwa",
+
+      "Min": "0",
+
+      "Max": "765",
+
+      "Units": "psi (skrajnia)",
+
+      "Formula": "(A*3)*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0B",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie bezwzględne w kolektorze dolotowym",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "kPa (bezwzględne)",
+
+      "Formula": "A"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0B",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie bezwzględne w kolektorze dolotowym",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "psi (bezwzględne)",
+
+      "Formula": "A*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0C",
+
+      "Byte": "2",
+
+      "Description": "Obroty silnika",
+
+      "Min": "0",
+
+      "Max": "16383.75",
+
+      "Units": "obr./min",
+
+      "Formula": "((A*256)+B)/4"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0D",
+
+      "Byte": "1",
+
+      "Description": "Prędkość pojazdu",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "km/h",
+
+      "Formula": "A"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0D",
+
+      "Byte": "1",
+
+      "Description": "Prędkość pojazdu",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "mph",
+
+      "Formula": "A*0.62137"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0E",
+
+      "Byte": "1",
+
+      "Description": "Wyprzedzenie czasowe",
+
+      "Min": "-64",
+
+      "Max": "63,5",
+
+      "Units": "° względem cylindra #1",
+
+      "Formula": "A/2-64"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0F",
+
+      "Byte": "1",
+
+      "Description": "Temperatura powietrza dolotowego",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°C",
+
+      "Formula": "A-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "0F",
+
+      "Byte": "1",
+
+      "Description": "Temperatura powietrza dolotowego",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°F",
+
+      "Formula": "((A-40) * 1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "10",
+
+      "Byte": "2",
+
+      "Description": "Natężenie przepływu powietrza MAF",
+
+      "Min": "0",
+
+      "Max": "655.35",
+
+      "Units": "gramy/sek.",
+
+      "Formula": "((A*256)+B)/100"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "11",
+
+      "Byte": "1",
+
+      "Description": "Położenie przepustnicy",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "1F",
+
+      "Byte": "2",
+
+      "Description": "Czas pracy od uruchomienia silnika",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "sekundy",
+
+      "Formula": "(A*256)+B"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "21",
+
+      "Byte": "2",
+
+      "Description": "Przebyta odległość z zapaloną lampką kontrolną awarii (MIL)",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "km",
+
+      "Formula": "(A*256)+B"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "21",
+
+      "Byte": "2",
+
+      "Description": "Przebyta odległość z zapaloną lampką kontrolną awarii (MIL)",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "mile",
+
+      "Formula": "((A*256)+B)*0.62137"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "22",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (w stosunku do podciśnienia w kolektorze)",
+
+      "Min": "0",
+
+      "Maks": "5177.265",
+
+      "Units": "kPa",
+
+      "Formula": "((A*256)+B)*0.079"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "22",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (w stosunku do podciśnienia w kolektorze)",
+
+      "Min": "0",
+
+      "Maks": "5177.265",
+
+      "Units": "psi",
+
+      "Formula": "(((A*256)+B)*0.079)*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "23",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (diesel. lub bezpośredni wtrysk benzyny)",
+
+      "Min": "0",
+
+      "Max": "655.350",
+
+      "Units": "kPa (skrajnia)",
+
+      "Formula": "((A*256)+B)*10"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "23",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (diesel. lub bezpośredni wtrysk benzyny)",
+
+      "Min": "0",
+
+      "Max": "655.350",
+
+      "Units": "psi",
+
+      "Formula": "(((A*256)+B)*10)*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "2C",
+
+      "Byte": "1",
+
+      "Description": "Sterowany EGR",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "100*A/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "2D",
+
+      "Byte": "1",
+
+      "Description": "Błąd EGR",
+
+      "Min": "-100",
+
+      "Max": "99.22",
+
+      "Units": "%",
+
+      "Formula": "(A-128)*100/128"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "2E",
+
+      "Byte": "1",
+
+      "Description": "Nakazane przedmuchiwanie wyparne",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "100*A/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "2F",
+
+      "Byte": "1",
+
+      "Description": "Wejście poziomu paliwa",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "100*A/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "30",
+
+      "Byte": "1",
+
+      "Description": "# rozgrzewek od skasowanych kodów",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Formula": "A"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "31",
+
+      "Byte": "2",
+
+      "Description": "Odległość przebyta od czasu skasowania kodów",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "km",
+
+      "Formula": "(A*256)+B"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "31",
+
+      "Byte": "2",
+
+      "Description": "Odległość przebyta od czasu skasowania kodów",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "mile",
+
+      "Formula": "((A*256)+B)*0.62137"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "32",
+
+      "Byte": "2",
+
+      "Description": "Prężność par układu parowania",
+
+      "Min": "-8.192",
+
+      "Max": "8.192",
+
+      "Units": "Pa",
+
+      "Formula": "((A*256)+B)/4"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "33",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie barometryczne",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "kPa (bezwzględne)",
+
+      "Formula": "A"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "33",
+
+      "Byte": "1",
+
+      "Description": "Ciśnienie barometryczne",
+
+      "Min": "0",
+
+      "Max": "255",
+
+      "Units": "psi (bezwzględne)",
+
+      "Formula": "A*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "34",
+
+      "Byte": "4",
+
+      "Description": "O2S1_WR_lambda(1):",
+
+      "Min": "0",
+
+      "Maks": "1.999",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "35",
+
+      "Byte": "4",
+
+      "Description": "O2S2_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "36",
+
+      "Byte": "4",
+
+      "Description": "O2S3_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "37",
+
+      "Byte": "4",
+
+      "Description": "O2S4_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "38",
+
+      "Byte": "4",
+
+      "Description": "O2S5_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "39",
+
+      "Byte": "4",
+
+      "Description": "O2S6_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3A",
+
+      "Byte": "4",
+
+      "Description": "O2S7_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3B",
+
+      "Byte": "4",
+
+      "Description": "O2S8_WR_lambda",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32.768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3C",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 1 temperatury katalizatora, bank 1",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°C",
+
+      "Formula": "((A*256)+B)/10-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3C",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 1 temperatury katalizatora, bank 1",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°F",
+
+      "Formula": "((((A*256)+B)/10-40)*1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3D",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 1 Czujnik temperatury katalizatora z banku 2",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°C",
+
+      "Formula": "((A*256)+B)/10-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3D",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 1 Czujnik temperatury katalizatora z banku 2",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°F",
+
+      "Formula": "((((A*256)+B)/10 40)*1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3E",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 2 Czujnik temperatury katalizatora, bank 1",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°C",
+
+      "Formula": "((A*256)+B)/10-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3E",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 2 Czujnik temperatury katalizatora, bank 1",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°F",
+
+      "Formula": "((((A*256)+B)/10-40)*1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3F",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 2 temperatury katalizatora",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°C",
+
+      "Formula": "((A*256)+B)/10-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "3F",
+
+      "Byte": "2",
+
+      "Description": "Czujnik 2 temperatury katalizatora",
+
+      "Min": "-40",
+
+      "Maks": "6.513.50",
+
+      "Units": "°F",
+
+      "Formula": "((((A*256)+B)/10-40)*1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "42",
+
+      "Byte": "2",
+
+      "Description": "Napięcie modułu sterującego",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "V",
+
+      "Formula": "((A*256)+B)/1000"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "43",
+
+      "Byte": "2",
+
+      "Description": "Bezwzględna wartość obciążenia",
+
+      "Min": "0",
+
+      "Maks": "25.700",
+
+      "Units": "°%",
+
+      "Formula": "((A*256)+B)*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "44",
+
+      "Byte": "2",
+
+      "Description": "Współczynnik równoważności poleceń",
+
+      "Min": "0",
+
+      "Max": "2",
+
+      "Formula": "((A*256)+B)/32768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "45",
+
+      "Byte": "1",
+
+      "Description": "Względne położenie przepustnicy",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "46",
+
+      "Byte": "1",
+
+      "Description": "Temperatura otoczenia",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°C",
+
+      "Formula": "A-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "46",
+
+      "Byte": "1",
+
+      "Description": "Temperatura otoczenia",
+
+      "Min": "-40",
+
+      "Max": "215",
+
+      "Units": "°F",
+
+      "Formula": "((A-40)*1.8)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "47",
+
+      "Byte": "1",
+
+      "Description": "Bezwzględne położenie przepustnicy B",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "48",
+
+      "Byte": "1",
+
+      "Description": "Bezwzględne położenie przepustnicy C",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "49",
+
+      "Byte": "1",
+
+      "Description": "Położenie pedału przyspieszenia D",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "4A",
+
+      "Byte": "1",
+
+      "Description": "Położenie pedału przyspieszenia E",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "4B",
+
+      "Byte": "1",
+
+      "Description": "Położenie pedału przyspieszenia F",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "4C",
+
+      "Byte": "1",
+
+      "Description": "Sterowany siłownik przepustnicy",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "4D",
+
+      "Byte": "2",
+
+      "Description": "Bieg czasowy z włączonym MIL",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "minuty",
+
+      "Formula": "(A*256)+B"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "4E",
+
+      "Byte": "2",
+
+      "Description": "Czas, jaki upłynął od skasowania kodów usterek",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "minuty",
+
+      "Formula": "(A*256)+B"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "52",
+
+      "Byte": "1",
+
+      "Description": "Paliwo etanolowe %",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "53",
+
+      "Byte": "2",
+
+      "Description": "Absolutny system parowania par parowych",
+
+      "Min": "0",
+
+      "Maks": "327.675",
+
+      "Units": "kPa",
+
+      "Formula": "((A*256)+B)/200"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "53",
+
+      "Byte": "2",
+
+      "Description": "Absolutny system parowania par parowych",
+
+      "Min": "0",
+
+      "Maks": "327.675",
+
+      "Units": "psi",
+
+      "Formula": "(((A*256)+B)/200)*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "54",
+
+      "Byte": "2",
+
+      "Description": "Prężność par układu parowania",
+
+      "Min": "-32.767",
+
+      "Max": "32.768",
+
+      "Units": "Pa",
+
+      "Formula": "A*256+B-32768"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "59",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (bezwzględne)",
+
+      "Min": "0",
+
+      "Max": "655.350",
+
+      "Units": "kPa",
+
+      "Formula": "((A*256)+B)*10"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "59",
+
+      "Byte": "2",
+
+      "Description": "Ciśnienie szyny paliwowej (bezwzględne)",
+
+      "Min": "0",
+
+      "Max": "655.350",
+
+      "Units": "psi",
+
+      "Formula": "(((A*256)+B)*10)*0.145037738"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5A",
+
+      "Byte": "1",
+
+      "Description": "Względne położenie pedału przyspieszenia",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5B",
+
+      "Byte": "1",
+
+      "Description": "Pozostały czas eksploatacji akumulatora hybrydowego",
+
+      "Min": "0",
+
+      "Max": "100",
+
+      "Units": "%",
+
+      "Formula": "A*100/255"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5C",
+
+      "Byte": "1",
+
+      "Description": "Temperatura oleju silnikowego",
+
+      "Min": "-40",
+
+      "Max": "210",
+
+      "Units": "°C",
+
+      "Formula": "A-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5C",
+
+      "Byte": "1",
+
+      "Description": "Temperatura oleju silnikowego",
+
+      "Min": "-40",
+
+      "Max": "210",
+
+      "Units": "°F",
+
+      "Formula": "((A-40)*1.8)+32"
+
+
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5D",
+
+      "Byte": "2",
+
+      "Description": "Układ rozrządu wtrysku paliwa",
+
+      "Min": "-210",
+
+      "Max": "301.992",
+
+      "Formula": "(((A*256)+B)-26.880)/128"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "5E",
+
+      "Byte": "2",
+
+      "Description": "Zużycie paliwa w silniku",
+
+      "Min": "0",
+
+      "Max": "3212.75",
+
+      "Units": "L/h",
+
+      "Formula": "((A*256)+B)*0.05"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "61",
+
+      "Byte": "1",
+
+      "Description": "Silnik zapotrzebowania kierowcy - procent momentu obrotowego",
+
+      "Min": "-125",
+
+      "Max": "125",
+
+      "Units": "%",
+
+      "Formula": "A-125"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "62",
+
+      "Byte": "1",
+
+      "Description": "Rzeczywisty silnik - procent momentu obrotowego",
+
+      "Min": "-125",
+
+      "Max": "125",
+
+      "Units": "%",
+
+      "Formula": "A-125"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "63",
+
+      "Byte": "2",
+
+      "Description": "Referencyjny moment obrotowy silnika",
+
+      "Min": "0",
+
+      "Max": "65.535",
+
+      "Units": "Nm",
+
+      "Formula": "A*256+B"
+
+    },
+
+
+
+
+
+    {
+
+      "Mode": "01",
+
+      "PID": "78",
+
+      "Byte": "9",
+
+      "Description": "Temperatura spalin (EGT) Bank 1",
+
+      "Min": "-40",
+
+      "Max": "6513.5",
+
+      "Units": "°C",
+
+      "Formula": "(B*256+C)/10-40"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "79",
+
+      "Byte": "9",
+
+      "Description": "Temperatura spalin (EGT) bank 2",
+
+      "Min": "-40",
+
+      "Max": "6513.5",
+
+      "Units": "°C",
+
+      "Formula": "(B*256+C)/10-40"
+
+    },
+
+
+
+    {
+
+      "Mode": "01",
+
+      "PID": "78",
+
+      "Byte": "9",
+
+      "Description": "Temperatura spalin (EGT) Bank 1",
+
+      "Min": "-48",
+
+      "Max": "13059",
+
+      "Units": "°F",
+
+      "Formula": "2*((B*256+C)/10-40)+32"
+
+    },
+
+    {
+
+      "Mode": "01",
+
+      "PID": "79",
+
+      "Byte": "9",
+
+      "Description": "Temperatura spalin (EGT) bank 2",
+
+      "Min": "-48",
+
+      "Max": "13059",
+
+      "Units": "°F",
+
+      "Formula": "2*((B*256+C)/10-40)+32"
+
+    }
+
+
+  ]
+
+} 

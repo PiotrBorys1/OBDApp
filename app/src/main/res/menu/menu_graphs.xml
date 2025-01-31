@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settingsSamples"
+        android:title="@string/gener_sett"/>
+
+    <item android:id="@+id/savetoFile"
+        android:title="@string/save_to_file" />
+
+    <item android:id="@+id/YaxisSettings"
+        android:title="@string/y_setings" />
+</menu>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DiagnosticsOBD">
+
+
+    <TextView
+        android:id="@+id/textTitleDiadnosticOBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/select_option"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_gravity="center"
+     app:layout_constraintTop_toBottomOf="@+id/textTitleDiadnosticOBD"
+     >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_go_to_graphs"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:textSize="25sp"
+        android:text="@string/graphs"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_show_chart_24"
+        app:iconTint="@color/black"
+        app:iconGravity="start"
+        app:iconSize="50dp"
+        android:layout_gravity="center"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@color/transparent_blue"
+         />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGeneralInfo"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_electric_car_24"
+        app:iconTint="@color/black"
+        android:layout_gravity="center"
+        app:iconGravity="start"
+        app:iconSize="40dp"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/transparent_blue"
+        android:text="@string/generl_info"
+
+
+         />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonErrorCodes"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:textSize="25sp"
+        android:text="@string/err_codes"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_error_24"
+        app:iconTint="@color/black"
+        app:iconGravity="start"
+        android:layout_gravity="center"
+        app:iconSize="40dp"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/transparent_blue"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonclearErrorCodes"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:textSize="25sp"
+        android:text="@string/clr_err_codes"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        app:icon="@drawable/baseline_clear_24"
+        app:iconTint="@color/black"
+        app:iconGravity="start"
+        app:iconSize="40dp"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/transparent_blue"
+
+        />
+     <com.google.android.material.button.MaterialButton
+         android:id="@+id/buttonOpengraphFile"
+         android:layout_width="300dp"
+         android:layout_height="120dp"
+         android:textSize="25sp"
+         android:text="@string/open_graph_file"
+         android:textColor="@color/black"
+         app:icon="@drawable/baseline_all_inbox_24"
+         app:iconTint="@color/black"
+         android:layout_gravity="center"
+         app:iconGravity="start"
+         app:iconSize="40dp"
+         app:strokeWidth="2dp"
+         app:backgroundTint="@color/transparent_blue"
+         />
+ </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_for_graphs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/graphChooseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/select_graphs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp"
+            />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/compatSwitchCheckall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graphChooseTitle"
+
+            android:layout_marginStart="20dp"
+
+            android:checked="false"
+
+            />
+        <TextView
+            android:id="@+id/checkAllGraphs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/check_alla_graphs"
+            app:layout_constraintTop_toTopOf="@+id/compatSwitchCheckall"
+            app:layout_constraintStart_toEndOf="@+id/compatSwitchCheckall"
+            app:layout_constraintBottom_toBottomOf="@+id/compatSwitchCheckall"
+            android:layout_marginStart="20dp"
+
+
+            />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclergraphsnames"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@+id/compatSwitchCheckall"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAllGraphsOnOne"
+
+        />
+
+    <Button
+        android:id="@+id/buttonAllGraphsOnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/all_pl_one_gr"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSeparatedGraphs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="5dp"
+         />
+    <Button
+        android:id="@+id/buttonSeparatedGraphs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/each_pl_anoth_gr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

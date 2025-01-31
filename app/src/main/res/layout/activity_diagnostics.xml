@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/constrLAuActDiagn"
+    tools:context=".ActivityDiagnostics"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texttest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/freezeActualData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:textColor="@color/ap_black"
+        android:text="@string/freeze_data"
+        app:layout_constraintTop_toTopOf="parent"
+        android:checked="false"
+        />
+
+
+    <TextView
+        android:id="@+id/DTC_caused_freeze_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freezeActualData"
+
+        />
+    <Button
+        android:id="@+id/NextErrorCausedFreeze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/ap_black"
+        android:text="@string/Next_Freeze_Err"
+        app:layout_constraintTop_toBottomOf="@+id/DTC_caused_freeze_frame"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGeneralValues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NextErrorCausedFreeze"
+        />
+
+
+
+</LinearLayout>

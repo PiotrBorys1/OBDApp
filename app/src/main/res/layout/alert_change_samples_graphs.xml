@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ap_gray"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="@string/adjst_sample"
+        />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_samples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:valueFrom="0.0"
+        android:valueTo="1000.0"
+        app:labelBehavior="gone"
+        />
+
+
+    <EditText
+        android:id="@+id/maxNumberOfSamples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/max_num_sampl"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/ringbuffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ring_buff"
+        android:drawableEnd="@drawable/baseline_rotate_left_24"
+
+        android:layout_marginTop="30dp"
+        />
+    <CheckBox
+        android:id="@+id/linearbuffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liner_buff"
+        android:drawableEnd="@drawable/outline_skip_next_24"
+
+        />
+
+</LinearLayout>
